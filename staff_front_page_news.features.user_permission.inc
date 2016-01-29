@@ -15,6 +15,7 @@ function staff_front_page_news_user_default_permissions() {
     'name' => 'access comments',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
   );
