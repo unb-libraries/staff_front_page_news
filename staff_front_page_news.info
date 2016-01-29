@@ -11,6 +11,7 @@ dependencies[] = node
 dependencies[] = staff_committee
 dependencies[] = text
 dependencies[] = views
+stylesheets[all][] = css/news.css
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_instance][] = comment-comment_node_front_page_news-comment_body
