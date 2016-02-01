@@ -20,9 +20,9 @@
       ?>
       <div class="attribution">
         <div class="comment-submitted">
-          <?php if ($new): ?>
-            <span class="new"><?php print $new; ?></span>
-          <?php endif; ?>
+          <?php if ($new) { ?>
+            <span class="new"><i class="icon-flag"></i></span>
+          <?php } ?>
           <span class="commenter-name">
             <?php print 'Submitted by '; ?>
             <?php print $author; ?>
