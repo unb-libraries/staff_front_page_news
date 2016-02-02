@@ -22,7 +22,7 @@
 }
 .node-front-page-news .comment-delete a:before {
   font-family: FontAwesome;
-  content: "\f05c";
+  content: "\f00d";
   display: inline-block;
   margin-right: 2px;
   text-decoration: none;
