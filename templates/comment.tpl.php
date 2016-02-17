@@ -23,9 +23,27 @@
           <?php if ($new) { ?>
             <span class="new"><i class="icon-flag"></i></span>
           <?php } ?>
+          <?php
+            $display_name = '';
+            $uname = user_load($comment->uid);
+            $fname = field_get_items('user', $uname, 'field_first_name');
+            $lname = field_get_items('user', $uname, 'field_last_name');
+            // Retrieve sanitized version of username from user account object.
+            $uid = check_plain(format_username($uname));
+
+            if ($fname && $lname):
+              $display_name = $fname[0]['value'] . ' ' . $lname[0]['value'];
+            elseif ($fname):
+              $display_name = $fname[0]['value'];
+            elseif ($lname):
+              $display_name = $lname[0]['value'];
+            else:
+              $display_name = $uid;
+            endif;
+          ?>
           <span class="commenter-name">
             <?php print 'Submitted by '; ?>
-            <?php print $author; ?>
+            <?php print '<a href="/users/' . $uid . '" title="View user profile" class="username">' . $display_name . '</a>'; ?>
           </span>
           <span class="comment-time">
             <?php print ' on '; ?>
