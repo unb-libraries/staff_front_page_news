@@ -23,7 +23,9 @@ function staff_front_page_news_user_default_permissions() {
   // Exported permission: 'administer comments'.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
-    'roles' => array(),
+    'roles' => array(
+      'Book Admin' => 'Book Admin',
+    ),
     'module' => 'comment',
   );
 
