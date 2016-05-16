@@ -48,6 +48,113 @@ function staff_front_page_news_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'comment_notify_available_alerts';
+  $strongarm->value = array(
+    1 => '1',
+    2 => '2',
+  );
+  $export['comment_notify_available_alerts'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_notify_comment_notify_default_mailtext';
+  $strongarm->value = 'Hi [comment-subscribed:author:field-first-name] [comment-subscribed:author:field-last-name],
+
+[current-user:field-first-name] [current-user:field-last-name] has commented on: "[comment:node:title]"
+
+"[comment:body]"
+
+You can view or reply to the comment here:
+[comment:url]
+
+You can stop receiving emails when someone replies to this post, by going to:
+[comment-subscribed:unsubscribe-url]
+
+You can configure the auto-following feature for your future posts in the "Comment follow-up notification settings" section of your user account settings:
+[site:login-url]
+
+-- [site:name] team
+[site:url]
+
+Please do not reply to this email.';
+  $export['comment_notify_comment_notify_default_mailtext'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_notify_default_anon_mailalert';
+  $strongarm->value = '0';
+  $export['comment_notify_default_anon_mailalert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_notify_default_registered_mailalert';
+  $strongarm->value = '2';
+  $export['comment_notify_default_registered_mailalert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_notify_node_notify_default_mailalert';
+  $strongarm->value = 1;
+  $export['comment_notify_node_notify_default_mailalert'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_notify_node_notify_default_mailtext';
+  $strongarm->value = 'Hi [comment:node:author],
+
+
+You have received a comment on: "[comment:node:title]"
+
+"[comment:body]"
+
+You can view or reply to the comment at the following url
+[comment:url]
+
+You will receive emails like this for all replies to your posts. You can
+disable this by logging in and changing the "Comment follow-up notification settings" for your user account at
+[comment:node:author:edit-url].
+
+-- [site:name] team
+[site:url]
+
+Please do not reply to this email.';
+  $export['comment_notify_node_notify_default_mailtext'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_notify_node_types';
+  $strongarm->value = array(
+    'front_page_news' => 'front_page_news',
+    'library_banner_notice' => 0,
+    'book' => 0,
+    'committee_announcements' => 0,
+    'committee_child_page' => 0,
+    'committee_parent_page' => 0,
+    'incident_report' => 0,
+    'lcd_announcement' => 0,
+    'lcd_event' => 0,
+    'lcd_photo' => 0,
+    'library_hours' => 0,
+    'meeting_minutes' => 0,
+    'page' => 0,
+    'policies_procedures_and_forms' => 0,
+    'library_printer' => 0,
+    'screensaver_message' => 0,
+    'short_url' => 0,
+    'staff_calendar_event' => 0,
+    'student_application' => 0,
+  );
+  $export['comment_notify_node_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_front_page_news';
   $strongarm->value = '1';
   $export['comment_preview_front_page_news'] = $strongarm;

@@ -20,6 +20,15 @@ function staff_front_page_news_user_default_permissions() {
     'module' => 'comment',
   );
 
+  // Exported permission: 'administer comment notify'.
+  $permissions['administer comment notify'] = array(
+    'name' => 'administer comment notify',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'comment_notify',
+  );
+
   // Exported permission: 'administer comments'.
   $permissions['administer comments'] = array(
     'name' => 'administer comments',
@@ -99,6 +108,15 @@ function staff_front_page_news_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
+  );
+
+  // Exported permission: 'subscribe to comments'.
+  $permissions['subscribe to comments'] = array(
+    'name' => 'subscribe to comments',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'comment_notify',
   );
 
   return $permissions;
