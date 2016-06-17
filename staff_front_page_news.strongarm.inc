@@ -130,9 +130,9 @@ Please do not reply to this email.';
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_notify_node_types';
   $strongarm->value = array(
+    'book' => 'book',
     'front_page_news' => 'front_page_news',
     'library_banner_notice' => 0,
-    'book' => 0,
     'committee_announcements' => 0,
     'committee_child_page' => 0,
     'committee_parent_page' => 0,
