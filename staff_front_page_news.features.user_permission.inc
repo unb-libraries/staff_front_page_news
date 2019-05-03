@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * staff_front_page_news.features.user_permission.inc
@@ -34,6 +35,7 @@ function staff_front_page_news_user_default_permissions() {
     'name' => 'administer comments',
     'roles' => array(
       'Book Admin' => 'Book Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'comment',
   );
@@ -43,6 +45,7 @@ function staff_front_page_news_user_default_permissions() {
     'name' => 'create front_page_news content',
     'roles' => array(
       'News Admin' => 'News Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -52,6 +55,7 @@ function staff_front_page_news_user_default_permissions() {
     'name' => 'delete any front_page_news content',
     'roles' => array(
       'News Admin' => 'News Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -61,6 +65,7 @@ function staff_front_page_news_user_default_permissions() {
     'name' => 'delete own front_page_news content',
     'roles' => array(
       'News Admin' => 'News Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -70,6 +75,7 @@ function staff_front_page_news_user_default_permissions() {
     'name' => 'edit any front_page_news content',
     'roles' => array(
       'News Admin' => 'News Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -78,6 +84,7 @@ function staff_front_page_news_user_default_permissions() {
   $permissions['edit own comments'] = array(
     'name' => 'edit own comments',
     'roles' => array(
+      'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
@@ -88,6 +95,7 @@ function staff_front_page_news_user_default_permissions() {
     'name' => 'edit own front_page_news content',
     'roles' => array(
       'News Admin' => 'News Admin',
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -96,6 +104,7 @@ function staff_front_page_news_user_default_permissions() {
   $permissions['post comments'] = array(
     'name' => 'post comments',
     'roles' => array(
+      'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
@@ -105,6 +114,7 @@ function staff_front_page_news_user_default_permissions() {
   $permissions['skip comment approval'] = array(
     'name' => 'skip comment approval',
     'roles' => array(
+      'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',

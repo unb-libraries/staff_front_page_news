@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * staff_front_page_news.features.user_role.inc

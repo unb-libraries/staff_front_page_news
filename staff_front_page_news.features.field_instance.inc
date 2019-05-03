@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * staff_front_page_news.features.field_instance.inc
@@ -183,7 +184,7 @@ function staff_front_page_news_field_default_field_instances() {
     'settings' => array(
       'description_field' => 1,
       'file_directory' => 'news',
-      'file_extensions' => 'txt pdf doc docx xls',
+      'file_extensions' => 'txt pdf doc docx xls dot',
       'max_filesize' => '',
       'user_register_form' => FALSE,
     ),

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * staff_front_page_news.strongarm.inc
@@ -106,7 +107,6 @@ Please do not reply to this email.';
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_notify_node_notify_default_mailtext';
   $strongarm->value = 'Hi [comment:node:author],
-
 
 You have received a comment on: "[comment:node:title]"
 
