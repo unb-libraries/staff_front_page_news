@@ -8,7 +8,6 @@ dependencies[] = ctools
 dependencies[] = features
 dependencies[] = file
 dependencies[] = image
-dependencies[] = lcd_display
 dependencies[] = node
 dependencies[] = staff_committee
 dependencies[] = strongarm
